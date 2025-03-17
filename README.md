@@ -35,3 +35,10 @@ O **MovieApp** é um aplicativo nativo Android desenvolvido em **Kotlin** com **
 - Configurar o arquivo `local.properties` com:  
 ```properties
 TMDB_API_KEY="sua_chave_aqui"
+
+🚀 Executando o Projeto
+Clone o repositório:
+git clone https://github.com/seu-usuario/MovieApp.git
+Abra no Android Studio e sincronize o Gradle
+Configure a API Key no local.properties
+Rode o projeto no emulador ou dispositivo físico
