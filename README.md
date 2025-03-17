@@ -1,27 +1,37 @@
-# MovieApp
+# 🎬 MovieApp - Kotlin + Jetpack Compose
 
-MovieApp é um aplicativo Android que permite aos usuários explorar filmes, marcar favoritos e assistir trailers. Ele utiliza a API The Movie DB para exibir filmes populares e detalhes sobre cada um.
+## 📌 Descrição
+O **MovieApp** é um aplicativo nativo Android desenvolvido em **Kotlin** com **Jetpack Compose** que permite aos usuários **buscar filmes, favoritar e assistir trailers**.
 
-## Funcionalidades
+---
 
-- Listagem de filmes populares.
-- Favoritar filmes.
-- Exibir trailers de filmes.
-- Pesquisa de filmes.
+## 🚀 Tecnologias Utilizadas
+- **Kotlin** + **Jetpack Compose**
+- **Arquitetura MVVM + Repository Pattern**
+- **Coroutines + Flow** para operações assíncronas
+- **Retrofit** para consumo da API TMDB
+- **Room** para persistência dos filmes favoritos
+- **ExoPlayer** para reprodução de trailers
+- **Hilt (Dagger)** para injeção de dependência
+- **Paging 3** para paginação de dados
+- **MockK e JUnit** para testes automatizados
+- **CI/CD com Fastlane e GitHub Actions**
 
-## Tecnologias
+---
 
-- Kotlin
-- Jetpack Compose
-- Retrofit
-- ExoPlayer
-- Hilt
-- MVVM Architecture
+## 📱 Funcionalidades
+✅ **Busca automática de filmes** conforme o usuário digita  
+✅ **Lista de favoritos persistida no banco de dados (Room)**  
+✅ **Tela de detalhes do filme** com sinopse, imagens e trailer  
+✅ **Player customizado para trailers (ExoPlayer)**  
+✅ **Suporte a diferentes tamanhos de tela (responsividade)**  
+✅ **Testes automatizados (JUnit, MockK, UI Test - Espresso/Compose)**  
 
-## Como Rodar o Projeto
+---## 🔧 Como Rodar o Projeto
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/MovieApp.git
-2. Abra o projeto no Android Studio.
-3. Execute o app em um dispositivo Android ou emulador.
+### ✅ **Pré-requisitos**
+- Android Studio **Giraffe | 2023.3.1** ou superior  
+- Conta no **TMDB** para obter a API Key  
+- Configurar o arquivo `local.properties` com:  
+```properties
+TMDB_API_KEY="sua_chave_aqui"
